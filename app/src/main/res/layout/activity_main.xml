@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LIST DATA MAHASISWA"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:text="Tambah"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FFC107"
+        app:cornerRadius="25dp"/>
+
+</RelativeLayout>
